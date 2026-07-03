@@ -1,0 +1,39 @@
+name: flappy_bird_game
+description: Flap & Fly - A fun bird flying game with multiple levels and sound effects.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.5.3
+  audioplayers: ^6.7.1
+  google_fonts: ^8.1.0
+  in_app_purchase: ^3.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  web:
+    generate: true
+    image_path: "assets/images/logo/app_icon.png"
+  image_path: "assets/images/logo/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/images/logo/
